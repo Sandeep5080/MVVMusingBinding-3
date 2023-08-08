@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Department" representedClassName=".Department" syncable="YES">
+        <attribute name="departmentID" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="departmenttouserdetails" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="UserDetails" inverseName="userDetailsToDepartment" inverseEntity="UserDetails"/>
+    </entity>
+    <entity name="UserDetails" representedClassName=".UserDetails" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="userDetailID" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="userDetailsToDepartment" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Department" inverseName="departmenttouserdetails" inverseEntity="Department"/>
+    </entity>
+</model>

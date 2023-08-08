@@ -1,0 +1,6 @@
+framework module Pods_MVVM_using_Binding {
+  umbrella header "Pods-MVVM using Binding-umbrella.h"
+
+  export *
+  module * { export * }
+}

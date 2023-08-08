@@ -1,0 +1,6 @@
+framework module Pods_MVVM_using_Binding_MVVM_using_BindingUITests {
+  umbrella header "Pods-MVVM using Binding-MVVM using BindingUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
